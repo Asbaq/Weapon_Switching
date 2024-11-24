@@ -178,6 +178,15 @@ Simple Noise Node Output -> Multiply Node B.
 Multiply Node -> Base Color.
 
 
+Thought process behind the visual effects for each weapon.
+
+Element or Energy Type:
+
+Fire: Flames, embers, and heat distortions.
+Ice: Frost particles, cool glow, and breaking shards.
+Lightning: Sparks, arcs, and a glowing charge.
+
+
 VFX Graph Setting for IceWeapon
 
 Gradient Setup
