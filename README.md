@@ -216,4 +216,21 @@ Simple Noise Node Output -> Multiply Node B.
 Multiply Node -> Base Color.
 
 
+Optimized for Mobile
+
+Noise: Use pre-baked noise textures instead of procedural nodes.
+
+Gradients: Use pre-baked gradient textures instead of procedural generation.
+
+Glow/Emission: Simplify glow intensity with Multiply instead of Power; avoid HDR and heavy bloom.
+
+Transparency: Minimize overdraw; use Alpha Clip for fully transparent areas.
+
+Textures: Compress textures (ETC2/ASTC) and use low resolution (e.g., 256x256).
+
+Node Precision: Set nodes to Half Precision where possible.
+
+Profile: Test with Unity Profiler and real devices for performance validation.
+
+
 
