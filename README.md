@@ -166,14 +166,16 @@ Gradient Setup
 UV Node → Split Node (G Channel) → Lerp Node (T Input).
 Color A (Orange) → Lerp Node A Input.
 Color B (Red) → Lerp Node B Input.
-Lerp Node Output → Base Color Input of the Master Node.
+Lerp Node Output → Multiply Node A.
 
 
 Noise for Flickering
 
 Time Node → Tiling and Offset Node (Offset Input).
 Tiling and Offset Node Output → Simple Noise Node (UV Input).
-Simple Noise Node Output available for use.
+Simple Noise Node Output -> Multiply Node B.
+
+Multiply Node -> Base Color.
 
 
 VFX Graph Setting for IceWeapon
@@ -183,14 +185,16 @@ Gradient Setup
 UV Node → Split Node (G Channel) → Lerp Node (T Input).
 Color A (Blue) → Lerp Node A Input.
 Color B (DarkBlue) → Lerp Node B Input.
-Lerp Node Output → Base Color Input of the Master Node.
+Lerp Node Output → Multiply Node A.
 
 
 Noise for Flickering
 
 Time Node → Tiling and Offset Node (Offset Input).
 Tiling and Offset Node Output → Simple Noise Node (UV Input).
-Simple Noise Node Output available for use.
+Simple Noise Node Output -> Multiply Node B.
+
+Multiply Node -> Base Color.
 
 
 VFX Graph Setting for ElectricityWeapon
@@ -200,16 +204,16 @@ Gradient Setup
 UV Node → Split Node (G Channel) → Lerp Node (T Input).
 Color A (DarkBlue) → Lerp Node A Input.
 Color B (Voilet) → Lerp Node B Input.
-Lerp Node Output → Base Color Input of the Master Node.
+Lerp Node Output → Multiply Node A.
 
 
 Noise for Flickering
 
 Time Node → Tiling and Offset Node (Offset Input).
 Tiling and Offset Node Output → Simple Noise Node (UV Input).
-Simple Noise Node Output available for use.
+Simple Noise Node Output -> Multiply Node B.
 
-
+Multiply Node -> Base Color.
 
 
 
