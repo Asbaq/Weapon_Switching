@@ -10,6 +10,7 @@ Script
 
 public abstract class Weapon : MonoBehaviour
 {
+
     public string WeaponName { get; protected set; }
     public abstract void Activate();
     public abstract void Deactivate();
@@ -22,6 +23,7 @@ using UnityEngine;
 
 public class FireWeapon : Weapon
 {
+
     private void Awake()
     {
         WeaponName = "Fire";
@@ -47,6 +49,7 @@ using UnityEngine;
 
 public class IceWeapon : Weapon
 {
+
     private void Awake()
     {
         WeaponName = "Ice";
@@ -72,6 +75,7 @@ using UnityEngine;
 
 public class ElectricityWeapon : Weapon
 {
+
     private void Awake()
     {
         WeaponName = "Electricity";
@@ -93,10 +97,11 @@ public class ElectricityWeapon : Weapon
 
 WeaponManager
 
-using UnityEngine;
 
+using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
+
     public Weapon[] weapons; // Array to hold all weapons
     private Weapon activeWeapon;
     public AudioSource audioSource; // Assign an AudioSource in the inspector
@@ -138,6 +143,7 @@ using UnityEngine;
 
 public class WeaponButton : MonoBehaviour
 {
+
     public Weapon weapon; // Assign the corresponding weapon in the Inspector
     private WeaponManager weaponManager;
 
